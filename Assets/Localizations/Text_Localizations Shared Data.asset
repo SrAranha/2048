@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Text_Localizations Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Text_Localizations
+  m_TableCollectionNameGuidString: 776e813a36a9f5349b298f8f21bb5653
+  m_Entries:
+  - m_Id: 347228487680
+    m_Key: bnt-play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393927868416
+    m_Key: btn-exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 492930220032
+    m_Key: btn-options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10458730741760
+    m_Key: btn-general
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10551210950656
+    m_Key: btn-credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10623902433280
+    m_Key: btn-return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10881856323584
+    m_Key: txt-masterVol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11074672672768
+    m_Key: txt-gridSize
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11366956941312
+    m_Key: txt-language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11473974607872
+    m_Key: btn-resetHighscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11612009152512
+    m_Key: txt-resetedScore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11869354868736
+    m_Key: txt-github
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11915869700096
+    m_Key: txt-twitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11993963446272
+    m_Key: txt-madeBy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12639210979328
+    m_Key: txt-warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12779233624064
+    m_Key: btn-yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12796262498304
+    m_Key: bnt-no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13210458406912
+    m_Key: txt-highscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13261159153664
+    m_Key: txt-currentScore
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 9047703353758056472
+  references:
+    version: 2
+    RefIds:
+    - rid: 9047703353758056472
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1689188449309

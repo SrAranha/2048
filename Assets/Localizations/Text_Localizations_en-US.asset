@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Text_Localizations_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 776e813a36a9f5349b298f8f21bb5653, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 347228487680
+    m_Localized: Play Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393927868416
+    m_Localized: Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 492930220032
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10458730741760
+    m_Localized: General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10551210950656
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10623902433280
+    m_Localized: Return to Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10881856323584
+    m_Localized: Main Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11074672672768
+    m_Localized: Grid Size
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11366956941312
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11473974607872
+    m_Localized: Reset Highscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11612009152512
+    m_Localized: Reset Highscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11869354868736
+    m_Localized: Click the button bellow to see the code behind this game, and what
+      was used to make it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11915869700096
+    m_Localized: 'Want to report a bug directly to me?
+
+      My twitter is <color=lightblue>@herrdanilo</color>
+
+      Or
+      click the button below to be sent to my page.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11993963446272
+    m_Localized: This game was made by Danilo "Aranha".
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12639210979328
+    m_Localized: This will reset your highscore, are you sure?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12779233624064
+    m_Localized: Yes, I am!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12796262498304
+    m_Localized: NO, GO BACK!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13210458406912
+    m_Localized: Highscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13261159153664
+    m_Localized: Current Score
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

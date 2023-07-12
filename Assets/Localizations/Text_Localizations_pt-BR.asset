@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Text_Localizations_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 776e813a36a9f5349b298f8f21bb5653, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 347228487680
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393927868416
+    m_Localized: Sair do Jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 492930220032
+    m_Localized: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10458730741760
+    m_Localized: Geral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10551210950656
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10623902433280
+    m_Localized: Retornar ao Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10881856323584
+    m_Localized: Volume Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11074672672768
+    m_Localized: Tamanho da Grade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11366956941312
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11473974607872
+    m_Localized: "Redefinir Pontua\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11612009152512
+    m_Localized: "Pontua\xE7\xE3o Redefinida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11869354868736
+    m_Localized: "Clique no bot\xE3o abaixo para ver o c\xF3digo do jogo, e o que
+      usei para cri\xE1-lo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11915869700096
+    m_Localized: "Quer reportar um bug diretamente para mim?\nMeu twitter \xE9 \n<color=lightblue>@herrdanilo</color>\nOu
+      clique no bot\xE3o abaixo para ver meu perfil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11993963446272
+    m_Localized: Esse jogo foi feito por Danilo "Aranha".
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12639210979328
+    m_Localized: "Isso ir\xE1 redefinir sua maior pontua\xE7\xE3o, tem certeza?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12779233624064
+    m_Localized: Sim, tenho certeza!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12796262498304
+    m_Localized: "N\xC3O, VOLTE!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13210458406912
+    m_Localized: "Maior Pontua\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13261159153664
+    m_Localized: "Pontua\xE7\xE3o Atual"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
