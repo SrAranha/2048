@@ -11,5 +11,5 @@ Besides Unity's oficial assets, i've used [Demigiant's DOTween](https://assetsto
 Minha versão desse jogo popular, e também, meu primeiro jogo lançado!
 ## Como jogar
 É simples! Use as setas do teclado para mover o blocos pela grade!
-## Pacores Usados
+## Pacotes Usados
 Além dos pacotes oficiais da Unity, também usei [DOTween de Demigiant](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676).
