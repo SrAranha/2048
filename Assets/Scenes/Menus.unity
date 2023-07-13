@@ -1848,9 +1848,9 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: English
-      m_Image: {fileID: 21300000, guid: 1b59297918433eb46a1ffa288ca29103, type: 3}
+      m_Image: {fileID: 21300000, guid: a453cd45e1835e443a4ed3d9c08cf112, type: 3}
     - m_Text: Portuguese
-      m_Image: {fileID: 21300000, guid: 95b5dd6ee954c8147a0ab0ea1fa23c16, type: 3}
+      m_Image: {fileID: 21300000, guid: 2e8dc5ff28e4f244f89d0e53457c53f5, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b59297918433eb46a1ffa288ca29103, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a453cd45e1835e443a4ed3d9c08cf112, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
