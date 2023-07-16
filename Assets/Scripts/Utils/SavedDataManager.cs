@@ -14,7 +14,9 @@ public class SavedDataManager : Singleton<SavedDataManager>
     public void ResetALLSavedData()
     {
         // GAMEPLAY
-        savedData.highscore = 0;
+        savedData.highscoreX4 = 0;
+        savedData.highscoreX5 = 0;
+        savedData.highscoreX6 = 0;
         savedData.gridSize = GameSettings.GridSizes.x5;
         // LANGUAGE
         savedData.language = GameSettings.Language.ENGLISH;
@@ -25,7 +27,9 @@ public class SavedDataManager : Singleton<SavedDataManager>
     }
     public void ResetHighScore()
     {
-        savedData.highscore = 0;
+        savedData.highscoreX4 = 0;
+        savedData.highscoreX5 = 0;
+        savedData.highscoreX6 = 0;
     }
     IEnumerator Start()
     {

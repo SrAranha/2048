@@ -7,11 +7,13 @@ public class ScoreManager : Singleton<ScoreManager>
     [SerializeField] private TMP_Text currentScoreCounter;
     [SerializeField] private TMP_Text highscoreCounter;
     private SO_SavedData savedData;
-
+    private int currentHighscore;
     private void Start()
     {
         savedData = SavedDataManager.instance.savedData;
-        highscoreCounter.text = savedData.highscore.ToString();
+        HighscoreBasedOnGridSize(out int highscore);
+        currentHighscore = highscore;
+        highscoreCounter.text = currentHighscore.ToString();
     }
     public void SetScore(int score)
     {
@@ -22,15 +24,43 @@ public class ScoreManager : Singleton<ScoreManager>
     {
         currentScoreCounter.text = currentScore.ToString();
 
-        if (currentScore > savedData.highscore)
+        if (currentScore > currentHighscore)
         {
             UpdateHighscore();
         }
     }
     private void UpdateHighscore()
     {
-        savedData.highscore = currentScore;
-        highscoreCounter.text = currentScore.ToString();
+        currentHighscore = currentScore;
+        highscoreCounter.text = currentHighscore.ToString();
+        switch (savedData.gridSize)
+        {
+            case GameSettings.GridSizes.x4:
+                savedData.highscoreX4 = currentHighscore;
+                break;
+            case GameSettings.GridSizes.x5:
+                savedData.highscoreX5 = currentHighscore;
+                break;
+            case GameSettings.GridSizes.x6:
+                savedData.highscoreX6 = currentHighscore;
+                break;
+        }
+    }
+    private void HighscoreBasedOnGridSize(out int highscore)
+    {
+        highscore = currentHighscore;
+        switch (savedData.gridSize)
+        {
+            case GameSettings.GridSizes.x4:
+                highscore = savedData.highscoreX4;
+                break;
+            case GameSettings.GridSizes.x5:
+                highscore = savedData.highscoreX5;
+                break;
+            case GameSettings.GridSizes.x6:
+                highscore = savedData.highscoreX6;
+                break;
+        }
     }
     #region DEBUG
     [NaughtyAttributes.Button]
