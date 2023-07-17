@@ -100,6 +100,32 @@ MonoBehaviour:
     m_Localized: Current Score
     m_Metadata:
       m_Items: []
+  - m_Id: 1763991603789824
+    m_Localized: How To Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766295056826368
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766402808496128
+    m_Localized: Objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766872339857408
+    m_Localized: 'The game''s objective is match all blocks until you have a 2048
+      block.
+
+      To match the blocks, is needed to have two of the same blocks
+      (number and color) in the same line or collumn, and then move them so they''ll
+      match and become the next block.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766834008113152
+    m_Localized: Its simple! Use the keyboard arrow keys to move the blocks around
+      the grid!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

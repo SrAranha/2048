@@ -91,6 +91,26 @@ MonoBehaviour:
     m_Key: txt-currentScore
     m_Metadata:
       m_Items: []
+  - m_Id: 1763991603789824
+    m_Key: btn-howtoplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766295056826368
+    m_Key: txt-controlsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766402808496128
+    m_Key: txt-objectiveTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766834008113152
+    m_Key: txt-controlsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766872339857408
+    m_Key: txt-objectiveText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

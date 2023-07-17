@@ -96,6 +96,31 @@ MonoBehaviour:
     m_Localized: "Pontua\xE7\xE3o Atual"
     m_Metadata:
       m_Items: []
+  - m_Id: 1763991603789824
+    m_Localized: Como Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766295056826368
+    m_Localized: Controles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766402808496128
+    m_Localized: Objetivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766834008113152
+    m_Localized: "\xC9 simples! Use as setas do teclado para mover os blocos pela
+      grade!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1766872339857408
+    m_Localized: "O objetivo de um jogo 2048 \xE9 juntar todos os blocos at\xE9 se
+      obter um bloco de n\xFAmero 2048.\r\nPara juntar os blocos, \xE9 necess\xE1rio
+      ter dois blocos iguais (n\xFAmero e cor) na mesma linha ou coluna, e ent\xE3o
+      mover os blocos para uma dire\xE7\xE3o que os junte para formar o pr\xF3ximo
+      bloco."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
