@@ -1,45 +1,96 @@
-using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameplayManager : Singleton<GameplayManager>
 {
     [SerializeField] private GameObject prefabSquare;
     [SerializeField] private GameObject grid;
+    [SerializeField] private GameObject gameOverWarning;
+    [SerializeField] private TMP_Text text2048;
     private GridGenerator gridGenerator;
     [Header("Set on Start")]
     [SerializeField] private List<Transform> freeSquares;
     [SerializeField] private List<Transform> usedSquares;
     [SerializeField] private Vector2 coordMinMax;
+    [Header("OnGoing")]
     [SerializeField] private List<Transform> movedBlocks;
+    [SerializeField] private bool isGameOver;
+    private bool has2048block;
 
     private void Start()
     {
         gridGenerator = grid.GetComponent<GridGenerator>();
+        isGameOver = false;
+        gameOverWarning.SetActive(false);
+        has2048block = false;
+        text2048.gameObject.SetActive(false);
     }
     private void Update()
     {
-        CalculateScore();
+        if (!isGameOver)
+        {
+            OnReach2048Block();
+            CalculateScore();
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            MoveDown();
-            CreateNewBlock();
+            // JUST FOR TESTINGS
+            if (Input.GetKey(KeyCode.KeypadEnter))
+            {
+                Invoke(nameof(RandomMove), 0f);
+            }
+            //InvokeRepeating(nameof(RandomMove), 0f, 1f);
+            // JUST FOR TESTINGS
+
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                MoveDown();
+                CreateNewBlock();
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                MoveUp();
+                CreateNewBlock();
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                MoveRight();
+                CreateNewBlock();
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                MoveLeft();
+                CreateNewBlock();
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+    }
+    #region DEBUG
+    private void RandomMove()
+    {
+        int dirToMove = Random.Range(1, 4);
+        switch (dirToMove)
         {
-            MoveUp();
-            CreateNewBlock();
+            case 1:
+                MoveDown();
+                break;
+            case 2:
+                MoveUp();
+                break;
+            case 3:
+                MoveRight();
+                break;
+            case 4:
+                MoveLeft();
+                break;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        CreateNewBlock();
+    }
+    #endregion
+    private void OnReach2048Block()
+    {
+        if (has2048block && text2048.gameObject.activeInHierarchy == false)
         {
-            MoveRight();
-            CreateNewBlock();
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            MoveLeft();
-            CreateNewBlock();
+            text2048.gameObject.SetActive(true);
         }
     }
     public void StartGame()
@@ -74,18 +125,104 @@ public class GameplayManager : Singleton<GameplayManager>
             }
             else if (currentChild.childCount == 1)
             {
+                Block block = currentChild.GetChild(0).GetComponent<Block>();
+                if (block.currentVariation == 10)
+                {
+                    has2048block = true;
+                }
                 usedSquares.Add(currentChild);
             }
             else if (currentChild.childCount >= 1)
             {
                 usedSquares.Add(currentChild);
-                Debug.LogError("<color=red>" + currentChild + " HAS " + currentChild.childCount + " CHILDS</color>", currentChild);
+                //Debug.LogError("<color=red>" + currentChild + " HAS " + currentChild.childCount + " CHILDS</color>", currentChild);
             }
         }
         if (freeSquares.Count == 0)
         {
-            Debug.LogWarning("NO MORE SPACE FOR NEW SQUARES");
+            Debug.LogWarning("NO MORE SPACE FOR NEW SQUARES, CHECKING FOR GAME OVER!");
+            if (IsGameOver())
+            {
+                isGameOver = true;
+                gameOverWarning.SetActive(true);
+                Debug.LogError("GAME OVER");
+            }
         }
+    }
+    private bool IsGameOver()
+    {
+        Debug.LogWarning("CHECKING GAME OVER");
+        bool gameover = true;
+        for (int i = 0; i < usedSquares.Count; i++)
+        {
+            if (gameover == false)
+            {
+                break;
+            }
+            Block curBlock = usedSquares[i].GetChild(0).GetComponent<Block>();
+            var nameSplited = usedSquares[i].name.Split(' ');
+            int.TryParse(nameSplited[1], out int x);
+            int.TryParse(nameSplited[2], out int y);
+            // Check x direction
+            int curX = x - 1;
+            for (int j = 0; j < 3; j++)
+            {
+                if (curX < coordMinMax.x || curX == x - 2 || curX == x)
+                {
+                    curX++;
+                    continue;
+                }
+                else if (curX == x + 2 || curX > coordMinMax.y)
+                {
+                    break;
+                }
+                else
+                {
+                    string nextSquareName = nameSplited[0] + ' ' + curX + ' ' + nameSplited[2];
+                    Block nextBlock = GameObject.Find(nextSquareName).GetComponentInChildren<Block>();
+                    if (CheckNextSquare(curBlock, nextBlock))
+                    {
+                        //Debug.LogWarning("<color=green>" + usedSquares[i].name + " CAN MOVE TO " + nextSquareName + "</color>", nextBlock.gameObject);
+                        gameover = false;
+                        break;
+                    }
+                    //Debug.LogWarning("<color=red>" + usedSquares[i].name + " CANT MOVE TO " + nextSquareName + "</color>", nextBlock.gameObject);
+                }
+                curX++;
+            }
+            // Check y direction
+            int curY = y - 1;
+            for (int k = 0; k < 3; k++)
+            {
+                if (curY < coordMinMax.x || curY == y - 2 || curY == y)
+                {
+                    curY++;
+                    continue;
+                }
+                else if (curY == y + 2 || curY > coordMinMax.y)
+                {
+                    break;
+                }
+                else
+                {
+                    string nextSquareName = nameSplited[0] + ' ' + nameSplited[1] + ' ' + curY;
+                    Block nextBlock = GameObject.Find(nextSquareName).GetComponentInChildren<Block>();
+                    if (CheckNextSquare(curBlock, nextBlock))
+                    {
+                        Debug.LogWarning("<color=green>" + usedSquares[i].name + " CAN MOVE TO " + nextSquareName + "</color>", nextBlock.gameObject);
+                        gameover = false;
+                        break;
+                    }
+                    Debug.LogWarning("<color=red>" + usedSquares[i].name + " CANT MOVE TO " + nextSquareName + "</color>", nextBlock.gameObject);
+                }
+                curY++;
+            }
+        }
+        return gameover;
+    }
+    private bool CheckNextSquare(Block curBlock, Block nextBlock)
+    {
+        return curBlock.currentVariation == nextBlock.currentVariation;
     }
     private void CalculateScore()
     {
@@ -142,7 +279,7 @@ public class GameplayManager : Singleton<GameplayManager>
         }
         else if (nextSquare.childCount > 1)
         {
-            Debug.LogWarning(nextSquare.name + " HAS " + nextSquare.childCount + " BLOCKS", nextSquare);
+            //Debug.LogWarning(nextSquare.name + " HAS " + nextSquare.childCount + " BLOCKS", nextSquare);
             canMove = false;
         }
     }

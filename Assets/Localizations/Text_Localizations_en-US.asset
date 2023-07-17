@@ -126,6 +126,22 @@ MonoBehaviour:
       the grid!
     m_Metadata:
       m_Items: []
+  - m_Id: 1840350447419392
+    m_Localized: You've reached the 2048 block!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840507507326976
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840828845539328
+    m_Localized: Reset Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840572292546560
+    m_Localized: Cant make any more move.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

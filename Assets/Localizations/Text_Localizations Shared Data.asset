@@ -111,6 +111,22 @@ MonoBehaviour:
     m_Key: txt-objectiveText
     m_Metadata:
       m_Items: []
+  - m_Id: 1840350447419392
+    m_Key: txt-reach2048
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840507507326976
+    m_Key: txt-gameoverTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840572292546560
+    m_Key: txt-gameoverText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840828845539328
+    m_Key: btn-resetGame
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

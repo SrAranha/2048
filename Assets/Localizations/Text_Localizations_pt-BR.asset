@@ -121,6 +121,22 @@ MonoBehaviour:
       bloco."
     m_Metadata:
       m_Items: []
+  - m_Id: 1840350447419392
+    m_Localized: "Voc\xEA alcan\xE7ou o bloco 2048!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840507507326976
+    m_Localized: Fim de Jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840828845539328
+    m_Localized: Reiniciar Jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1840572292546560
+    m_Localized: "N\xE3o h\xE1 mais movimentos a fazer."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
