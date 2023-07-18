@@ -1,10 +1,14 @@
 - [English 🇺🇸](#english-)
   - [2048](#2048)
   - [How to Play](#how-to-play)
+  - [Donwloading the Game](#donwloading-the-game)
+  - [Changelog](#changelog)
   - [Assets Used](#assets-used)
 - [Português 🇧🇷](#português-)
   - [2048](#2048-1)
   - [Como jogar](#como-jogar)
+  - [Baixando o Jogo](#baixando-o-jogo)
+  - [Changelog](#changelog-1)
   - [Pacotes Usados](#pacotes-usados)
 
 # English 🇺🇸
@@ -21,6 +25,13 @@ To match the blocks, is needed to have two of the same blocks (number and color)
 <img src="https://www.freecodecamp.org/news/content/images/2021/08/giphy.gif" width="120">
 *Gif from FreeCodeAcademy showing their 2048 game.*
 
+## Donwloading the Game
+To download the game, go to [Releases](https://github.com/SrAranha/2048/releases) page on this repository, or on the [Changelog](#changelog) page, and select the version you'd like.
+After downloading the zip file, extract the same name folder to where you want, and open **`2048.exe`** to play the game!
+
+**ATENTION:** The file to be downloaded is the one which follows the name **`2048-{version}.zip`**, the other files are the source code for the game.
+## Changelog
+To see what changed in each version, [click here](CHANGELOGS.md).
 ## Assets Used
 Besides Unity's oficial assets, i've used [Demigiant's DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676).
 
@@ -38,5 +49,12 @@ Para juntar os blocos, é necessário ter dois blocos iguais *(número e cor)* n
 <img src="https://www.freecodecamp.org/news/content/images/2021/08/giphy.gif" width="120">
 *Gif do FreeCodeAcademy mostrando o 2048 deles.*
 
+## Baixando o Jogo
+Para baixar o jogo, vá até a página de [Releases](https://github.com/SrAranha/2048/releases) do repositório, ou na página [Changelog](#changelog-1), e baixe a versão que quiser.
+Após baixar o arquivo zip, extraia a pasta de mesmo nome para onde desejar, e abra o arquivo **`2048.exe`** para jogar!
+
+**ATENÇÃO:** O arquivo a ser baixado, é o que o nome segue o padrão **`2048-{versão}.zip`**, os outros arquivos são o código fonte do jogo.
+## Changelog
+Para ver o que mudou em cada versão, [clique aqui](CHANGELOGS.md) *(Atualmente só em inglês)*.
 ## Pacotes Usados
 Além dos pacotes oficiais da Unity, também usei [DOTween de Demigiant](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676).
