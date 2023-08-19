@@ -5706,6 +5706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdeec78953121e49b13ef76c29d84d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backWithESC: 1
   listOfMenus:
   - {fileID: 282456659}
   - {fileID: 1359619874}
@@ -8102,6 +8103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdeec78953121e49b13ef76c29d84d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backWithESC: 0
   listOfMenus:
   - {fileID: 191979107}
   - {fileID: 1394929879}
