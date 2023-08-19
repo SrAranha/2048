@@ -1,7 +1,12 @@
+- [Version 1.1.1 (Version not published yet)](#version-111-version-not-published-yet)
 - [Version 1.1](#version-11)
 - [Version 1.0](#version-10)
 
 *To download an specific version, click on the topic name of each version.*
+
+## Version 1.1.1 (Version not published yet)
+- Now the player can return menus by pressing `ESC`.
+  - This works on Options Menu, and on Game Scene, both will return to Main Menu.
 
 ## [Version 1.1](https://github.com/SrAranha/2048/releases/tag/v1.1)
 - Changed the flags to [@ilustraGra](https://www.instagram.com/ilustragra/) sprites.
