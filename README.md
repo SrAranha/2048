@@ -1,7 +1,7 @@
 - [English 🇺🇸](#english-)
   - [2048](#2048)
   - [How to Play](#how-to-play)
-  - [Donwloading the Game](#donwloading-the-game)
+  - [Downloading the Game](#downloading-the-game)
   - [Changelog](#changelog)
   - [Assets Used](#assets-used)
 - [Português 🇧🇷](#português-)
@@ -25,7 +25,7 @@ To match the blocks, is needed to have two of the same blocks (number and color)
 <img src="https://www.freecodecamp.org/news/content/images/2021/08/giphy.gif" width="120">
 *Gif from FreeCodeAcademy showing their 2048 game.*
 
-## Donwloading the Game
+## Downloading the Game
 To download the game, go to [Releases](https://github.com/SrAranha/2048/releases) page on this repository, or on the [Changelog](#changelog) page, and select the version you'd like.
 After downloading the zip file, extract the same name folder to where you want, and open **`2048.exe`** to play the game!
 
